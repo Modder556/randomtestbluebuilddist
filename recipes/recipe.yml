@@ -8,5 +8,8 @@ modules:
     install:
       packages:
         - micro
-
+  - type: gnome-extensions
+    install:
+      - 1160   # Dash to Panel (taskbar)
+      - 3628   # ArcMenu (start menu)
   - type: signing
