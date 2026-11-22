@@ -12,4 +12,7 @@ modules:
     install:
       - 1160   # Dash to Panel (taskbar)
       - 3628   # ArcMenu (start menu)
+  - type: gschema-overrides
+    include:
+      - zz1-my-distro.gschema.override
   - type: signing
