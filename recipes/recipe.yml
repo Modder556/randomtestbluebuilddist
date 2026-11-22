@@ -1,3 +1,4 @@
+
 name: my-distro
 description: My first image.
 base-image: ghcr.io/ublue-os/silverblue-main
@@ -15,4 +16,18 @@ modules:
   - type: gschema-overrides
     include:
       - zz1-my-distro.gschema.override
+  - type: default-flatpaks
+    configurations:
+      - scope: system
+        install:
+          - org.mozilla.firefox
+          - org.gnome.TextEditor
+          - org.gnome.Calculator
+          - org.gnome.Loupe
+          - org.gnome.Papers
+          - io.missioncenter.MissionCenter
+          - com.github.tchx84.Flatseal
+          - it.mijorus.gearlever
+          - io.gitlab.adhami3310.Impression
+          - org.gnome.World.PikaBackup
   - type: signing
